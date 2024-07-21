@@ -8,8 +8,8 @@ export default function Header() {
         <div className="flex justify-center mb-5">
           <Link href={'/'}>
             <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-              <AvatarFallback>CN</AvatarFallback>
+              <AvatarImage src="https://github.com/shadcn.png" alt="Cantinho do Churrasco" />
+              <AvatarFallback>CC</AvatarFallback>
             </Avatar>
           </Link>
         </div>
