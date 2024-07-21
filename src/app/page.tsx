@@ -1,24 +1,52 @@
-import Popular from "@/components/Popular";
-import { CookingPot, CupSoda, UtensilsCrossed } from "lucide-react";
-
 export default function Home() {
   return (
     <>
-      <div className="flex gap-7 mt-5">
-        <div className="flex items-center gap-2">
-          <UtensilsCrossed size={24} strokeWidth={1.25} />
-          <span>Espetos</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <CookingPot size={24} strokeWidth={1.25} />
-          <span>Porções</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <CupSoda size={24} strokeWidth={1.25} />
-          <span>Bebidas</span>
-        </div>
-      </div>
-      <Popular />
+       <div className="w-full mt-14">
+        <div className="">
+          <h2 className="text-2xl font-semibold mb-4">Popular</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid gap-4">
+                  {/* <img
+                    src="/placeholder.svg"
+                    width={400}
+                    height={300}
+                    alt="Medalhão"
+                    className="rounded-lg object-cover aspect-[4/3]"
+                  /> */}
+                  <div className="grid gap-1">
+                    <h3 className="text-lg font-semibold">Medalhão</h3>
+                    <p className="text-muted-foreground">R$8,00</p>
+                  </div>
+                </div>
+                <div className="grid gap-4">
+                  {/* <img
+                    src="/placeholder.svg"
+                    width={400}
+                    height={300}
+                    alt="Calamari Fritti"
+                    className="rounded-lg object-cover aspect-[4/3]"
+                  /> */}
+                  <div className="grid gap-1">
+                    <h3 className="text-lg font-semibold">Carne</h3>
+                    <p className="text-muted-foreground">R$8,00</p>
+                  </div>
+                </div>
+                <div className="grid gap-4">
+                  {/* <img
+                    src="/placeholder.svg"
+                    width={400}
+                    height={300}
+                    alt="Meatballs"
+                    className="rounded-lg object-cover aspect-[4/3]"
+                  /> */}
+                  <div className="grid gap-1">
+                    <h3 className="text-lg font-semibold">Porpeta</h3>
+                    <p className="text-muted-foreground">R$8,00</p>
+                  </div>
+                </div>
+            </div>
+        </div> 
+       </div>
     </>
   )
 }
