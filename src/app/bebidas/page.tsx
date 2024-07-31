@@ -5,6 +5,7 @@ import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMe
 import { BRL_currency_formatter } from "@/helper/utils";
 import mocks, { Category, Item } from "@/mocks/mocks";
 import { FilterIcon } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Drinks() {
@@ -36,8 +37,8 @@ export default function Drinks() {
             {drink.drinks.bottled.juice.map((item: Item) => (
               <>
                 <div className="grid gap-4">
-                  <img
-                    src={item.picture}
+                  <Image
+                    src={`/${item.picture}`}
                     width={400}
                     height={300}
                     alt={item.description}

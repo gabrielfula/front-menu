@@ -2,6 +2,7 @@
 
 import { BRL_currency_formatter } from "@/helper/utils";
 import mocks, { Category, Item } from "@/mocks/mocks";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Skewer() {
@@ -16,8 +17,8 @@ export default function Skewer() {
             {skewers.skewer.map((item: Item) => (
               <>
                 <div className="grid gap-4">
-                  <img
-                    src={item.picture}
+                  <Image
+                    src={`/${item.picture}`}
                     width={400}
                     height={300}
                     alt={item.description}
